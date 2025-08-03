@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuickBreak</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background-color: #9c9e8b;
+      color: #7c4d2b;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #49664c;
+      color: rgb(212, 214, 192);
+      text-align: center;
+      padding: 40px 20px 30px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      background-color: #abba9e;
+      padding: 15px 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 2px 5px rgba(12, 157, 97, 0.1);
+    }
+
+    nav a {
+      margin: 0 20px;
+      text-decoration: none;
+      color: #4d2600;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #616852;
+    }
+
+    section {
+      padding: 50px 15%;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: #4d5f56;
+      margin-bottom: 20px;
+    }
+
+    h4 {
+      margin-top: 15px;
+    }
+
+    .rating {
+      color: #625022;
+      margin-bottom: 15px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      padding: 15px;
+      text-align: center;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #77935a;
+    }
+
+    td {
+      background-color: #b6b997;
+    }
+
+    form input, form select, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 12px 0;
+      border: 1px solid #312e2e;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    form button {
+      background-color: #385d2c;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    form button:hover {
+      background-color: #668261;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    footer {
+      background-color: #5a6746;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+
+    /* ✅ Contact form style */
+    .contact-form {
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      background-color: #dedfcf;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      flex-direction: column;
+    }
+
+    .contact-form > div {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact-form textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .btn-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 768px) {
+      section {
+        padding: 30px 5%;
+      }
+
+      nav a {
+        margin: 0 10px;
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>َQuick Break</h1>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#order">Order</a>
+    <a href="#socials">Socials</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home">
+    <h2>Top Picks</h2>
+    <h4>🍜 Indomie</h4>
+    <p class="rating">⭐⭐⭐⭐⭐</p>
+
+    <h4>🥟 Kmafa</h4>
+    <p class="rating">⭐⭐⭐⭐⭐</p>
+
+    <h4>🍰 Basbosa</h4>
+    <p class="rating">⭐⭐⭐⭐⭐</p>
+
+    <h4>☕ Coffee</h4>
+    <p class="rating">⭐⭐⭐⭐⭐</p>
+  </section>
+
+  <section id="menu">
+    <h2>Menu</h2>
+    <p>Check out our delicious range:</p>
+    <ul>
+      <li>Indomie</li>
+      <li>Ten</li>
+      <li>Mango</li>
+      <li>Balah Elsham</li>
+      <li>Kmafa</li>
+      <li>Fresh Juice</li>
+      <li>Basbosa</li>
+      <li>Coffee</li>
+    </ul>
+
+    <h3 style="margin-top: 30px;">Snack Highlights</h3>
+    <table>
+      <tr>
+        <th>Item</th>
+        <th>Item</th>
+        <th>Item</th>
+        <th>Item</th>
+      </tr>
+      <tr>
+        <td>Fries</td>
+        <td>Mini Pizza</td>
+        <td>Cookies</td>
+        <td>Chips</td>
+      </tr>
+      <tr>
+        <td>Waffles</td>
+        <td>Muffins</td>
+        <td>Spring Rolls</td>
+        <td>Nuggets</td>
+      </tr>
+    </table>
+  </section>
+
+  <section id="order">
+    <h2>Place Your Order</h2>
+    <form>
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone" name="phone" value="+20" required />
+
+      <label for="date">Preferred Date</label>
+      <input type="date" id="date" name="date" required />
+
+      <button type="submit">Send Order</button>
+    </form>
+  </section>
+
+  <section id="socials">
+    <h2><i>Follow Us</i></h2>
+    <ul>
+      <li>Facebook: @QuickBreak</li>
+      <li>Instagram: @QuickBreak</li>
+      <li>Twitter: @QuickBreak</li>
+    </ul>
+  </section>
+
+  <!--  Contact section -->
+  <section id="contact">
+    <h2><i>Contact Us!</i></h2>
+    <p><b>Phone / Whatsapp : 01*********</p></b>
+    <p>Telephone: 15684</p>
+
+    <form class="contact-form">
+      <div>
+        <label for="msg">Send us a message:</label>
+        <textarea id="msg" placeholder="Write your thoughts..."></textarea>
+      </div>
+
+      <div>
+        <label for="rate">Rate Us</label>
+        <select id="rate" name="rate">
+          <option value="1">⭐</option>
+          <option value="2">⭐⭐</option>
+          <option value="3">⭐⭐⭐</option>
+          <option value="4">⭐⭐⭐⭐</option>
+          <option value="5">⭐⭐⭐⭐⭐</option>
+        </select>
+      </div>
+
+      <div class="btn-container">
+        <button type="submit">Send Feedback</button>
+      </div>
+    </form>
+  </section>
+
+  <footer>
+    <h1>&copy; Project Development Team | Copyright 2025</h1>
+  </footer>
+
+</body>
+</html>
